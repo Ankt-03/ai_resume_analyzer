@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Analyzer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>AI Resume Analyzer</h1>
+    <p style="text-align:center; color:#94a3b8; margin-top:-20px;">
+        Upload your resume and match it with your dream job
+    </p>
+
+    <div class="card">
+        <label>Upload Resume (PDF)</label>
+        <input type="file" id="resume" name="resume" accept=".pdf">
+
+        <label>Paste Job Description</label>
+        <textarea id="jobDesc" placeholder="Paste job description here..."></textarea>
+
+        <button id="analyzeBtn">Analyze</button>
+    </div>
+</div>
+
+<div id="loadingScreen" class="loading-screen hidden">
+    <div class="loader"></div>
+    <p>Analyzing your resume...</p>
+</div>
+
+<!-- Move script here -->
+<script src="script.js"></script>
+
+</body>
+</html>
+    
